@@ -1,0 +1,13 @@
+python3 -m venv env
+sudo apt install pipenv
+source env/bin/activate
+pip install django==3.1
+django-admin startproject greatkart .
+python manage.py collectstatic   >>> after static in seetings has been entered
+python manage.py startapp category
+python -m pip install Pillow
+python manage.py startapp accounts
+python manage.py createsuperuser
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver

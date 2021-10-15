@@ -1,0 +1,235 @@
+/* One-off adjustments to individual modules */
+
+/* Men's UA HOVR Machina */
+@media screen and (min-width: 768px){
+.product-detail[data-pid="3021939"] #cm-placement-pdp-before-inherited .module-story-telling-text .module__pullquote { width: 74%; }
+}
+/* DVNLLN HOVR */
+@media screen and (min-width: 768px) and (max-width:1255px){
+.product-detail[data-pid="194514203672"] .slot-container:nth-child(5) .module__pullquote { width: 45%; }
+.product-detail[data-pid="194514203672"] .slot-container:nth-child(5) .module-story-telling-text.hero-center .module__pullquote .module__body-text { width:80%; }
+.l-pdp[data-pid="194514275488"] .slot-container:nth-child(5) .module__pullquote { width:80%; }
+
+}
+/* UA SPORTSMASK */
+@media screen and (min-width:768px) {
+.product-detail[data-pid="1368010"] .module-singleimage-textbox .module__copyarea { width: 38%; }
+}
+/* Men's UA RUSH Shirts */
+@media screen and (min-width:768px) {
+.product-detail[data-pid="1351448"] #cm-placement-pdp-before-inherited .module-story-telling-text .module__pullquote,
+.product-detail[data-pid="1353450"] #cm-placement-pdp-before-inherited .module-story-telling-text .module__pullquote { width: 70%; }
+}
+@media screen and (min-width:768px) {
+[data-pid="1351985"] .module-story-telling-split .module__primary-img { position: relative; }
+[data-pid="1351985"] .module-story-telling-split .module__primary-img:before,
+[data-pid="1351985"] .module-story-telling-split .module__primary-img:after {content: '';background: #fff;display: block;width: 3px;position: absolute;top: 0;left:0; bottom: 0;}
+[data-pid="1351985"] .module-story-telling-split .module__primary-img:before { left: auto; right: 0; }
+.b-header_account-link {white-space:nowrap}
+}
+/* Connected Shoes Page */
+/* make first line of text in storytelling smaller */
+#bodyPage[data-querystring="cid=connected-shoes-page"] .module-story-telling-text .module__quote p:first-of-type { font-size: 1rem; font-weight: 400; font-stretch: 100%; letter-spacing: normal; padding-bottom: .75em; }
+/* fix layout for SUPPORT AT EVERY TURN module */
+#bodyPage[data-querystring="cid=connected-shoes-page"] .module-story-telling-text:last-of-type .module__body-text p:nth-child(2n) { font-size: 1rem; padding-top: 1.25em; padding-bottom: .5em; }
+/* connected shoe lander */
+#bodyPage[data-querystring="cid=connected-shoes-page"] .slot-container[data-analytics*="SS21_Run_Connected_CLP_Site_2_1_2"] .module__primary-text { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); }
+#bodyPage[data-querystring="cid=connected-shoes-page"] .slot-container[data-analytics*="SS21_Run_Connected_CLP_Site_2_1_2"] .module__primary-text p:nth-child(2) { display:none; }  
+/* homepage new arrivals */
+@media screen and (max-width: 768px) {
+.slot-container[data-analytics*="SS21_New_Arrivals_Refresh_Site_1_1"] .bucket__link-text { padding-bottom:1.25rem !important; top:-4px; position:relative; display:inline-block; }
+.slot-container[data-analytics*="SS21_New_Arrivals_Refresh_Site_1_1"] .bucket__link-text:after { content:''; border-bottom: 2px solid #1d1d1d; display:block; }
+}
+/* desktop specific styles */
+@media screen and (min-width : 768px) {
+  .module-hero1.module--left.module--white-bg .module__copyarea {
+    position: absolute;
+  }
+}
+
+/* jigsaw mobile CTA width hotfix */
+@media screen and (max-width : 767px) {
+   .module-jigsaw.module-even1 .g-button_base {
+       left: 50%;
+       max-width: 288px;
+       margin-left: -144px;
+   }
+}
+#bodyPage[data-querystring="cgid=women"] #cm-placement-primary > div:nth-child(5) > div > div > div > .g-button_base { max-width: 75%; margin-top: 20px;}    
+.l-plp-sidebar-filter .b-refinements_swatch-btn {color: #0d0d0d; text-decoration: none;}
+.module-triple-in-grid { margin-bottom: 1rem !important} 
+
+
+/* Triple in-grid desktop text alignment hotfix 11/5/2020 */
+@media screen and (min-width : 768px) {
+  .module-triple-in-grid .module__secondary-text {
+    text-align: left;
+    padding-top: 16px;
+  }
+}
+/* Home Page Black Friday Tweaks*/
+.l-home_page .slot-container:nth-child(3) .module__snipe-text {
+  font-size: 1.25rem;
+  padding-bottom:16px;
+}
+/* UNITED WE WIN padding Issue fix 3-4-21*/
+@media screen and (max-width: 768px) {
+[data-analytics*="SS21_WHM_Site_2_1_3"] .module-hero1.module--left.module--dark-text .module__copyarea p {
+display: inline;
+}
+}
+/* ISO CHILL padding tweak 4-11-21*/
+@media screen and (min-width: 767px) {
+[data-analytics*="SS21_TRN_IsoChill_Team_COG_Site_2_1"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_TRN_IsoChill_Train_COG_Site_2_1"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_Run_IsoChill_Site_2_1_M"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_TRN_IsoChill_Team_M_Site_2_1"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_TRN_IsoChill_Train_M_Site_2_1"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_Run_IsoChill_Site_2_1_W"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_TRN_IsoChill_Team_W_Site_2_1"] .module-hero1 .module__copyarea,
+[data-analytics*="SS21_TRN_IsoChill_Train_W_Site_2_1"] .module-hero1 .module__copyarea {
+padding-left: 4.1%;
+}}
+
+@media screen and (max-width: 390px) {
+[data-analytics*="SS21_WHM_Site_2_1_3"] .module-hero1.module--left.module--dark-text .module__copyarea  {
+bottom: -10px;
+}
+}
+
+[data-analytics*="SS21_WHM_Site_2_1_3"] .module-hero1.module--left.module--dark-text .module__copyarea {
+padding-left: 16px;
+}
+
+
+
+
+
+
+.l-home_page .slot-container:first-child .module__secondary-text {
+  padding-bottom:1.5rem;
+}
+@media screen and (min-width: 768px) {
+.l-home_page  .module-3section.module--right .module__copyarea {
+padding-right: 16px;
+}
+}
+
+
+
+
+/* Curry Lander Tweaks */
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(3) .module__copyarea  p:last-child,
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(5) .module__copyarea  p:last-child { margin-top:1rem; }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] #IconEffect_s7classic_20 {
+   border: 5px solid #fff;
+   border-radius: 50%;
+   background:rgba(0,0,0,0.2);
+   width: 175px;
+   height: 175px;
+   top: 40% !important;
+}
+#bodyPage[data-querystring*="cgid=Curry-Brand"] #IconEffect_s7classic_20[state="replay"] {
+display:none;
+}
+#bodyPage[data-querystring*="cgid=Curry-Brand"] #IconEffect_s7classic_20::before {
+    content: "";
+    width: 0;
+    display: block;
+    height: 0;
+    position: relative;
+    border-style: solid;
+    border-width: 30px 0 30px 50px;
+    border-color: transparent transparent transparent #ffffff;
+    left: 41%;
+    top: 31%;
+}
+@media screen and (min-width: 1024px) {
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(2) { margin: 90px 0 }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(2) .module__body-text { width: 100% }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(3) { margin: 0 0 180px }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(3) .module__copyarea { padding: 3.75% 8.22% 5.57% 6.863% }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(4),
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(5),
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(6) { margin-bottom: 130px }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(5) .module__copyarea { padding: 5.75% 7.22% 3.75% 6.863% }
+}
+@media screen and (min-width: 1440px){
+    .l-plp { max-width:1440px; margin:0 auto; }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(2) .module__body-text { width: 100%; margin-bottom:100px }
+}@media screen and (max-width: 768px) {
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(3)  .module__copyarea { width: 86%; margin: 0 auto; } 
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(4) { margin-bottom:90px;  }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(5)   .module__copyarea { padding-left: 7%; padding-right: 7%; }
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(5)  .module__primary-text { width: 70%; margin: 0 auto;}
+#bodyPage[data-querystring*="cgid=Curry-Brand"] .slot-container:nth-child(7) .module__content-icon { display:none; }   
+}
+@media screen and (max-width: 768px){
+/* UA run landing page */
+#bodyPage[data-querystring*="cgid=footwear-CLP"] .bucket--template-router.bucket--count-2 .bucket__link-image picture {
+    width: 100%;
+    margin: -30% 0;
+}
+/* favorite button fix */
+.b-tile-fav_button, .b-tile-fav_selectButton { box-shadow:none;}
+
+#bodyPage[data-querystring*="cgid=Curry-Brand"] #IconEffect_s7classic_20 {
+   border: 2px solid #fff;
+   width: 55px;
+   height: 55px;
+   top: 38% !important;
+   left: 43% !important;
+}
+#bodyPage[data-querystring*="cgid=Curry-Brand"] #IconEffect_s7classic_20::before {
+    border-width: 10px 0 10px 15px;
+    left: 41%;
+    top: 31%;
+}
+#bodyPage[data-querystring*="cgid=Curry-Brand"]  .l-plp-mob_header,
+#bodyPage[data-querystring="cgid=lander-mental-strength"]  .l-plp-mob_header,
+#bodyPage[data-querystring="cgid=footwear-CLP"]  .l-plp-mob_header{ display:none;
+}
+[data-analytics*="SS21_Run_Flow_Site_4_5_1"] .module-story-telling-organic.module__wrapper { padding-bottom:0 }
+
+}
+
+
+/* EPMD-1966 25th Anniversary Tweaks 4-23-21*/
+@media screen and (min-width: 768px) {
+  [data-analytics*="SS21_Trn_25th_Anniversary_Site_2_1_M"] .module-hero1.module--right .module__copyarea {
+    padding-left: 16%;
+    padding-right: 2%;
+  }
+}
+/* 6-24-21 letter-spacing hot fix */
+.module-3section .g-button_base,
+.module-3section .module__secondary-text {
+    letter-spacing: normal;
+}
+/* 6-24-21 SEMI-ANNUAL text hot fix */
+[data-analytics*="SS21_SAE_Site_2Line_2_1"] .module-hero1.module--center .module__copyarea {
+    top: 60%;
+    bottom: initial;
+}
+@media screen and (min-width: 768px) {
+[data-analytics*="SS21_SAE_Site_2Line_2_1"] .module-hero1.module--center .module__copyarea {
+  top: 40%;
+  bottom: initial;
+  }
+}
+
+/* 6-29-21 storytelling video trigger  hot fix */
+@media screen and (max-width: 768px) {
+.module-story-telling-split .module__video-trigger:before {
+    left: 6.15vw;
+    top: 3.65vw;
+    border-width: 5.5vw 0 5.5vw 8vw;
+}
+.module-story-telling-split .module__video-trigger {
+    width: 20vw;
+    height: 20vw;
+    border: 1vw solid #fff;
+} 
+}
